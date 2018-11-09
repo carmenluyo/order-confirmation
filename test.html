@@ -1,0 +1,1119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="initial-scale=1.0">
+      <!-- So that mobile webkit will display zoomed in -->
+      <meta name="format-detection" content="telephone=no">
+      <!-- disable auto telephone linking in iOS -->
+      <title>{{orders.0.sellers.0.name}}</title>
+      <style type="text/css">
+         /* Resets: see reset.css for details */
+         .ReadMsgBody { width: 100%; background-color: #ebebeb;}
+         .ExternalClass {width: 100%; background-color: #ebebeb;}
+         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+         body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+         body {padding:0;}
+         table td {border-collapse:collapse;}
+         .yshortcuts a {border-bottom: none !important;}
+
+         /* Constrain email width for small screens */
+         @media screen and (max-width: 600px) {
+         table[class="container"] {
+         width: 100% !important;
+         }
+         }
+         /* Give content more room on mobile */
+         @media screen and (max-width: 480px) {
+         .status{padding-bottom:0px;}
+         }
+         /* Styles for forcing columns to rows */
+         @media only screen and (max-width : 600px) {
+         /* force container columns to (horizontal) blocks */
+         .container{border-radius:0 !important;}
+         .no-padding-top-bottom-mobile{padding-top:0;padding-bottom:0;padding:0 !important;}
+         .img-product{width:70px;}
+         .side-border td{padding-left:0;}
+         .button{padding:11px 0 !important;font-size:13px;width:100%;}
+         .table-button{width:100% !important;}
+         td[class="force-col"] {
+         display: block;
+         padding-right: 0 !important;
+         }
+         table[class="col-3"] {
+         /* unset table align="left/right" */
+         float: none !important;
+         width: 100% !important;
+         /* change left/right padding and margins to top/bottom ones */
+         padding-bottom: 12px;
+         border-bottom: 1px solid #eee;
+         }
+         /* remove bottom border for last column/row */
+         table[id="last-col-3"] {
+         border-bottom: none !important;
+         }
+         /* align images right and shrink them a bit */
+         img[class="col-3-img"] {
+         float: right;
+         margin-left: 6px;
+         max-width: 130px;
+         }
+         }
+         @media only screen and (max-width : 800px) {
+         .status{width:100% !important;}
+         .status div{width:200px !important;}
+         }
+         body{
+            margin:0;
+            padding:0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333333;
+            font-size: 14px;
+        }
+        /* yahoo, hotmail */
+        .ReadMsgBody{ width:100%; }
+        .ExternalClass{ width:100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+        .yshortcuts a{ border-bottom: none !important; }
+        .vb-outer{ min-width: 0 !important; }
+        .RMsgBdy, .ExternalClass{
+            width: 100%;
+            background-color: #3f3f3f;
+        }
+        /* outlook/office365 add buttons outside not-linked images and safari have 2px margin */
+        [o365] button{ margin: 0 !important; }
+        /* outlook */
+        table{ mso-table-rspace: 0pt; mso-table-lspace: 0pt; }
+        #outlook a{ padding: 0; }
+        a { border: 0 !important; text-decoration: none !important; }
+        img{ outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; }
+        a img{ border: none; }
+        /* Gmail */
+        .ii a[href] {
+            color: #333333 !important;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mobile-hide, td[class="mobile-hide"]{ display: none !important; }
+            .mobile-textcenter, td[class="mobile-textcenter"] { text-align: center !important; }
+            .mobile-textleft, td[class="mobile-textleft"] { text-align: left !important; }
+            .mobile-height-auto {
+                height: auto !important;
+            }
+            .marg_bttm_25 {
+                margin-bottom: 25px !important;
+            }
+            .h-auto {
+                height: auto !important;
+            }
+            .d-block {
+                display: block !important;
+            }
+            .text-footer {
+                line-height: normal !important;
+                font-size: 12px !important;
+            }
+            .lh-1 {
+                line-height: 1.3 !important;
+            }
+            .mobile-sinborde {
+                border: 0 !important;
+                border: none !important;
+            }
+            .mobile-img-full {
+                width: 100% !important;
+            }
+            .mobile-margen {
+                width: 8% !important;
+            }
+            td[class="mobile-margen"] {
+                width: 8% !important;
+            }
+            .mobile-full {
+                width: 100% !important;
+                max-width: 480px !important;
+            }
+            table[class="mobile-full"] {
+                width: 100% !important;
+                max-width: 480px !important;
+            }
+            .mobile-borde-top {
+                width: 100% !important;
+                max-width: none !important;
+                border-top: 0 !important;
+            }
+            .mobile-borde-right {
+                width: 100% !important;
+                max-width: none !important;
+                border-bottom: 0 !important;
+                border-right: 1px solid #e4e4e4 !important;
+            }
+            .mobile-borde-bottom {
+                width: 100% !important;
+                max-width: none !important;
+                border-bottom: 0 !important;
+            }
+            .textmobile {
+                font-size: 24px !important;
+                line-height: 35px !important;
+            }
+            table[class="tabla-centrar"] {
+                width: 70% !important;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+      </style>
+
+      <style>
+        .tgn__mail__btn{
+            font-size: 16px;
+            font-family: 'arial',sans-serif;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            background-color: #5822a0;
+            padding: 15px 45px;
+            display: block;
+            background: #5822a0;
+            background: linear-gradient(to right, #6b51e0 , #451ce6);
+        }
+      </style>
+
+   </head>
+   <body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+      <!-- 100% wrapper (grey background) -->
+      <!-- script id="results-template" type="text/x-handlebars-template" -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="mobile-table" style="max-width: 600px; width: 100%">
+                        <tr>
+                            <td align="center" valign="top" style="font-size:0; padding-top: 30px;
+                            padding-bottom: 25px;" bgcolor="#fff">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="200" class="mobile-table">
+                                    <tr>
+                                          <td align="center" valign="top" style="font-family: 'arial',sans-serif; font-size: 36px; font-weight: 800; line-height: 48px;" class="mobile-center">
+                                              <a href="http://{{_accountInfo.HostName}}.com.br"><img height="auto" border="0" width="auto" style="border:none;border-left:0px;border-right:0px;" alt="shopstar" src="http://mercury.vteximg.com.br/arquivos/logo.png?v=1" class="img-logo"></a>
+                                          </td>
+                                      </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="background-color: #ffffff;" bgcolor="#ffffff">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td align=center style="font-family: 'arial',sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding-top: 10px;" mc:edit="Paragraph">
+                                            <div style="font-size: 16px; display: block; font-weight: 400; line-height: 24px;color: #8c8b8b;">
+                                                
+                                                <span style="color: #5822a0;font-weight: bold;display: block;line-height: 40px;font-size: 20px;">Hola {{orders.0.clientProfileData.firstName}},</span><br>
+                                                <div>
+                                                    Gracias por comprar en <font style="color: #5822a0;font-weight: bold;">Shopstar.pe</font> tu orden <font style="color: #5822a0;font-weight: bold;">{{orders.0.orderGroup}}</font> pasará por un proceso de validación y recibirás las siguientes <font style="color: #5822a0;font-weight: bold;">notificaciones</font>
+                                                </div>
+                                            </div>                                
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                <tr>
+                                                    <td colspan="3" height="40"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                    <td style="vertical-align: top;" valign="top" align="center">
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td align="left" valign="top" width="170">
+                                                        <![endif]-->
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%; max-width: 170px;" class="mobile-full marg_bttm_25">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td align="center" style="text-align: center;">
+                                                                    <img alt="IShop" border="0" vspace="0" hspace="0" width="57" height="53" style="display: block;margin-left: auto; margin-right: auto;" src="http://mercury.vteximg.com.br/arquivos/entrega_1.png">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="10"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <div class="mobile-full" style="font-size: 14px;display: block;font-weight: 400;l1ne-height: 17px;color: #8c8b8b;font-family: 'arial',sans-serif;    max-width: 105px;">Confirmación de tu pedido</div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="20"></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                                </td>
+                                                                <td align="left" valign="top" width="330">
+                                                        <![endif]-->
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%; max-width: 330px;" class="mobile-full marg_bttm_25">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--[if (gte mso 9)|(lte ie 8)]>
+                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" width="165">
+                                                                    <![endif]-->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%; max-width: 165px;" class="mobile-full marg_bttm_25">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td align="center" style="text-align: center;">
+                                                                                <img alt="IShop" border="0" vspace="0" hspace="0" width="63" height="52" style="display: block;margin-left: auto;margin-right: auto;" src="http://mercury.vteximg.com.br/arquivos/entrega_2.png">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="10"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <div class="mobile-full" style=" font-size: 14px;display: block;font-weight: 400;line-height: 17px;color: #8c8b8b;font-family: 'arial',sans-serif;    max-width: 70px;">Estado de tu pedido</div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="20"></td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!--[if (gte mso 9)|(lte ie 8)]>
+                                                                            </td>
+                                                                            <td align="left" valign="top" width="165">
+                                                                    <![endif]-->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%; max-width: 165px;" class="mobile-full marg_bttm_25">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td align="center" style="text-align: center;">
+                                                                                <img alt="IShop" border="0" vspace="0" hspace="0" width="54" height="51" style="display: block;margin-left: auto;margin-right: auto;" src="http://mercury.vteximg.com.br/arquivos/entrega_3.png">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="10"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <div class="mobile-full" style="font-size: 14px;display: block;font-weight: 400;line-height: 17px;color: #8c8b8b;font-family: 'arial',sans-serif;    max-width: 70px;">Confirmación de entrega</div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="20"></td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!--[if (gte mso 9)|(lte ie 8)]>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <![endif]-->
+                                                    </td>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                                        <td align="center">
+                                                            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: #5822a0;; text-align: center; line-height: 30px; font-weight: bold;">Datos del Pedido</div>
+                                                        </td>
+                                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: #451ce617;">
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="3" height="10"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                                        <td align="center" style="width: 20px;">
+                                                            <div style="font-family: Arial;font-size: 16px;color: #4a4a4a;text-align: center;line-height: 30px;font-weight: bold;">
+                                                                Número de orden: <span style="font-family: Arial;font-size: 15px;color: #8c8b8b;text-align: center;line-height: 30px;">{{orders.0.orderGroup}}</span>
+                                                            </div>
+                                                        </td>
+                                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="3" height="10"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="padding: 5px 35px 20px 35px; background-color: #ffffff;" bgcolor="#ffffff">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">       
+                                                <!-- Dados do pedido -->
+                                               <tr>
+                                                    <td align="left" style="padding-top: 20px;">
+                                                        {{#each orders}}
+                                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                        <!-- Produto n# 1 -->
+                                                            {{#each items}}
+                                                            <tr>
+                                                                <!-- Thumb do produto-->
+                                                                <td width="20%" align="left" style="font-family: 'arial',sans-serif; font-size: 12px; font-weight: 400; line-height: 24px; padding: 15px 0px 5px 0px; color:#333333; border-bottom: 3px solid #eeeeee; padding-bottom: 15px;" mc:edit="Item 1">   <img src="{{imageUrl}}" width="60px" />
+                                                                </td>
+                
+                                                                <!-- Quantidade e descrição do produto -->
+                                                                <td width="56%" align="left" style="font-family: 'arial',sans-serif; font-size: 12px; border-bottom: 3px solid #eeeeee;">
+                                                                    <b>{{quantity}} un. {{name}}</b><br />
+                                                                        <i>
+                    
+                                                                        <span style="font-family: 'arial',sans-serif; font-size: 12px; font-weight: 400;">Entrega 
+                    
+                                                                            <span>
+                                                                                <span style="font-size:14px;font-family: 'arial',sans-serif;color:#000;display:inline-block;font-weight: bold;">
+                                                                                    {{#each ../shippingData.logisticsInfo}}
+                                                                                    {{#eq itemId ../id}}
+                                                                                    {{#each slas}}
+                        
+                                                                                    {{#eq ../selectedSla id}}
+                                                                                    {{#if deliveryWindow}}
+                                                                                    Programado
+                                                                                    {{else}}
+                                                                                    {{#unless shippingEstimateDate}}
+
+                                                                                </span>
+                                                                                    en hasta 
+                                                                                <strong style="font-size:12px;font-family: 'arial',sans-serif;color:#000;">
+                                                                                    {{#hasSubStr shippingEstimate 'bd'}}
+                                                                                        {{replace shippingEstimate 'bd' ' días hábiles.'}}
+                                                                                    {{else}}
+                                                                                        {{replace shippingEstimate 'd' ' días.'}}
+                                                                                    {{/hasSubStr}}
+                                                                                    {{else}}
+                                                                                </strong>até 
+                                                                                <strong style="font-size:14px;font-family: 'arial',sans-serif;color:#000;">
+                                                                                    {{formatDate shippingEstimateDate}}
+                                                                                    {{/unless}}
+                                                                                    {{/if}}
+                                                                                    {{/eq}}
+                                                                                    {{/each}}
+                                                                                    {{/eq}}
+                                                                                    {{/each}}
+                                                                                </strong>
+                                                                            </span>
+                                                                        </span>
+                                                                    </i>
+                                                                </td>
+                                                                <!-- Valor do produto -->
+                                                                <td width="24%" align="left" style="font-family: 'arial',sans-serif; font-size: 12px; font-weight: 400; line-height: 17px; color:#333333; border-bottom: 3px solid #eeeeee; padding-left: 15px;">
+                                                                    <b>{{quantity}} x S/. {{formatCurrency sellingPrice}}</b>
+                                                                </td>
+                                                            </tr>
+                                                             {{/each}}
+                                                        </table>
+                                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                            {{#each totals}}
+                                                            {{#if value}}                                              
+                                                                <tr>
+                                                                    <td width="75%" align="left" style="font-family: 'arial',sans-serif; font-size: 16px; font-weight: 300; line-height: 24px; padding: 10px 5px 0px 10px; padding-top: 14px;" mc:edit="Item 1">
+                                                                        {{#eq id "Items"}}<strong style="    color: #5822a0;">Producto</strong>{{/eq}}
+                                                                        {{#eq id "Shipping"}}<strong style="    color: #5822a0;">Envio</strong>{{/eq}}
+                                                                        {{#eq id "Discounts"}}Descuentos{{/eq}}
+                                                                        {{#eq id "Tax"}}Honorarios{{/eq}}
+                                                                    </td>
+                                                                    <td width="25%" align="left" style="font-family: 'arial',sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 10px 5px 0px 10px;" mc:edit="Item Value 2">S/. {{formatCurrency value}}</td> 
+                                                                </tr>
+                                                            {{/if}}                                               
+                                                            {{/each}}    
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                {{#if value}}
+                                                <tr>
+                                                    <td height="20"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td height="3" style="border-bottom: 3px solid #e9e9e9;"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="20"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#e9e9e9;">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td height="10" colspan="3"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 50px;" class="mobile-margen"></td>
+                                                                <td>
+                                                                    <table width="50%" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-full">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td valign="middle" height="40" width="50%" style="text-align: left; vertical-align: middle;">
+                                                                                <div style="font-family: Arial;font-size: 16px;display: block;font-weight: bold;line-height: 24px;color: #4A4A4A;">
+                                                                                    TOTAL
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table width="49%" border="0" cellpadding="0" cellspacing="0" align="right" class="mobile-full">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td height="40" valign="middle" style="vertical-align: middle; text-align: right;" class="mobile-textleft">
+                                                                                <div style="font-family: Arial;font-size: 16px;display: block;font-weight: bold;line-height: 24px;color: #4A4A4A;">
+                                                                                    S/. {{formatCurrency value}}
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td style="width: 50px;" class="mobile-margen"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="10" colspan="3"></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                {{/if}}
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    {{/each}}
+                                    <!-- Dados do pedido : End -->
+                                   
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                <tr>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                    <td style="vertical-align: top;" valign="top" align="center">
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td align="left" valign="top" width="250">
+                                                        <![endif]-->
+                                                       <!-- <table border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%; max-width: 249px;" class="mobile-full">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%;" class="tabla-centrar">
+                                                                            <tr>
+                                                                                <td width="50" valign="middle" align="left" class="mobile-vmiddle">
+                                                                                    <img  border="0" hspace="0" vspace="0" width="27" height="27" align="center" style="border: 0px; display: block; color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 27px; height: auto; max-width: 100%;" src="http://mercury.vteximg.com.br/arquivos/icon_user.png">
+                                                                                </td>
+                                                                                <td valign="middle" align="left">
+                                                                                    <div style="font-size: 14px;line-height: 24px;font-family: Arial;color: #8c8b8b;">
+                                                                                        <font style="font-weight: bold;">Datos del titular</font><br>
+                                                                                        {{orders.0.clientProfileData.firstName}}
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="20"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table> -->
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                                </td>
+                                                                <td align="left" valign="top" width="250">
+                                                        <![endif]-->
+                                                        <!-- <table border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%; max-width: 249px;" class="mobile-full">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%;" class="tabla-centrar">
+                                                                            <tr>
+                                                                                <td width="50" valign="middle" align="left" class="mobile-vmiddle">
+                                                                                    <img border="0" hspace="0" vspace="0" width="18" height="27" align="center" style="border: 0px; display: block; color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 18px; height: auto; max-width: 100%;" src="http://mercury.vteximg.com.br/arquivos/icon_money.png">
+                                                                                </td>
+                                                                                <td valign="middle" align="left">
+                                                                                    <div style="font-size: 14px;line-height: 24px;font-family: Arial;color: #8c8b8b;">
+                                                                                        <font style="font-weight: bold;">Comprobante de pago</font><br>
+                                                                                        Datos regístrados
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="20"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table> -->
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <![endif]-->
+                                                    </td>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                                        <td height="1" style="border-bottom: 2px solid #e9e9e9;"></td>
+                                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="40"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                <tr>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                    <td align="center">
+                                                        <div style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: #5822a0;; text-align: center; line-height: 30px; font-weight: bold;">Datos de la entrega:</div>
+                                                    </td>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" height="20"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                <tr>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                    <td style="vertical-align: top;" valign="top" align="center">
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td align="left" valign="top" width="250">
+                                                        <![endif]-->
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%; max-width: 249px;" class="mobile-full">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%;" class="tabla-centrar">
+                                                                            <tr>
+                                                                                <td width="50" valign="middle" align="left" class="mobile-vmiddle">
+                                                                                    <img border="0" hspace="0" vspace="0" width="21" height="23" align="center" style="border: 0px; display: block; color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 21px; height: auto; max-width: 100%;" src="http://mercury.vteximg.com.br/arquivos/icon_man.png">
+                                                                                </td>
+                                                                                <td valign="middle" align="left">
+                                                                                    <div style="font-size: 14px;line-height: 24px;font-family: Arial;color: #8c8b8b;">
+                                                                                        <font style="font-weight: bold;">Datos regístrados</font><br>
+                                                                                        {{orders.0.clientProfileData.firstName}} {{orders.0.clientProfileData.lastName}}
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="20"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                                </td>
+                                                                <td align="left" valign="top" width="250">
+                                                        <![endif]-->
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%; max-width: 249px;" class="mobile-full">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%;" class="tabla-centrar">
+                                                                            <tr>
+                                                                                <td width="50" valign="middle" align="left" class="mobile-vmiddle">
+                                                                                    <img border="0" hspace="0" vspace="0" width="29" height="19" align="center" style="border: 0px; display: block; color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 29px; height: auto; max-width: 100%;" src="http://mercury.vteximg.com.br/arquivos/DNI.png">
+                                                                                </td>
+                                                                                <td valign="middle" align="left">
+                                                                                    <div style="font-size: 14px;line-height: 24px;font-family: Arial;color: #8c8b8b;">
+                                                                                        <font style="font-weight: bold;">DNI</font><br>
+                                                                                        {{orders.0.clientProfileData.document}}
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="20"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <![endif]-->
+                                                    </td>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                <tr>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                    <td style="vertical-align: top;" valign="top" align="center">
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td align="left" valign="top" width="250">
+                                                        <![endif]-->
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%; max-width: 249px;" class="mobile-full">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%;" class="tabla-centrar">
+                                                                            <tr>
+                                                                                <td width="50" valign="middle" align="left" class="mobile-vmiddle">
+                                                                                    <img border="0" hspace="0" vspace="0" width="25" height="23" align="center" style="border: 0px; display: block; color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 25px; height: auto; max-width: 100%;" src="http://mercury.vteximg.com.br/arquivos/icon_calendary.png">
+                                                                                </td>
+                                                                                <td valign="middle" align="left">
+                                                                                    <div style="font-size: 14px;line-height: 24px;font-family: Arial;color: #8c8b8b;">
+                                                                                        <font style="font-weight: bold;">Fecha de entrega</font><br>
+                                                                                        {{formatDate orders.0.shippingData.logisticsInfo.0.slas.0.shippingEstimateDate}}
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="20"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                                </td>
+                                                                <td align="left" valign="top" width="250">
+                                                        <![endif]-->
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%; max-width: 249px;" class="mobile-full">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%;" class="tabla-centrar">
+                                                                            <tr>
+                                                                                <td width="50" valign="middle" align="left" class="mobile-vmiddle">
+                                                                                    <img border="0" hspace="0" vspace="0" width="20" height="28" align="center" style="border: 0px; display: block;width: 20px; height: auto; max-width: 100%;" src="http://mercury.vteximg.com.br/arquivos/icon_ubicacion.png">
+                                                                                </td>
+                                                                                <td valign="middle" align="left">
+                                                                                    <div style="font-size: 14px;line-height: 24px;font-family: Arial;color: #8c8b8b;">
+                                                                                        <font style="font-weight: bold;">Dirección de entrega</font><br>
+                                                                                        {{orders.0.shippingData.address.street}}, {{orders.0.shippingData.address.number}} {{orders.0.shippingData.address.complement}} - {{orders.0.shippingData.address.neighborhood}}
+                                                                                        <br />
+                                                                                        {{orders.0.shippingData.address.reference}} 
+                                                                                        <br />
+                                                                                        {{orders.0.shippingData.address.city}} - {{orders.0.shippingData.address.state}}
+
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="20"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--[if (gte mso 9)|(lte ie 8)]>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <![endif]-->
+                                                    </td>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                                        <td height="1" style="border-bottom: 2px solid #e9e9e9;"></td>
+                                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                                        <td align="center">
+                                                            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: #5822a0; text-align: center; line-height: 30px;font-weight: bold;">
+                                                                ¿Por qué comprar en <span class="d-block"><font style="letter-spacing: -3px">s h o p s t a r . p e</font> ?</span> 
+                                                            </div>
+                                                        </td>
+                                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                                    </tr>                                    
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                <tr>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                    <td style="vertical-align: top;" valign="top" align="center" class="h-auto"> 
+                                                        <!--[if gte mso 9]>
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td align="left" valign="top" width="170">
+                                                        <![endif]-->
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%;border: 1px solid #e9e9e9;height: 100%;margin-right: 15px;max-width: 150px;" class="mobile-full marg_bttm_25 h-auto ">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td height="20"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center" style="text-align: center;">
+                                                                        <img src="http://mercury.vteximg.com.br/arquivos/icon_carrito.png" border="0" style="display: inline-block;">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="10"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center" height="26" class="mobile-height-auto">
+                                                                        <div style="font-size: 12px;">Miles de productos</div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="20"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--[if gte mso 9]>
+                                                        </td>
+                                                        <td align="left" valign="top" width="330">
+                                                        <![endif]-->
+                                                        <table  border="0" cellpadding="0" cellspacing="0" align="left" style="width: 100%; max-width: 330px; height: 100%;" class="mobile-full h-auto">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <!--[if gte mso 9]>
+                                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td align="left" valign="top" width="165">
+                                                                    <![endif]-->
+                                                                    <table border="0" cellpadding="0" cellspacing="0"  align="left" style="width: 100%; max-width: 165px;border: 1px solid #e9e9e9;margin-right: 15px;height: 100%;" class="mobile-full marg_bttm_25 h-auto ">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" style="text-align: center;">
+                                                                                    <img src="http://mercury.vteximg.com.br/arquivos/icon_card.png" border="0" style="display: inline-block;" alt="MONT BLANC">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" class="mobile-height-auto">
+                                                                                    <div style="font-size: 12px;">Paga con cualquier tarjeta <br> de crédito o débito</div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="20"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!--[if gte mso 9]>
+                                                                    </td>
+                                                                    <td align="left" valign="top" width="165">
+                                                                    <![endif]-->
+                                                                    <table border="0" cellpadding="0" cellspacing="0" align="left" height="150" style="width: 100%; max-width: 150px;border: 1px solid #e9e9e9; height: 100%;" class="mobile-full h-auto">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="20"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" style="text-align: center;">
+                                                                                    <img src="http://mercury.vteximg.com.br/arquivos/icon_candado.png" border="0" style="display: inline-block;" alt="Tissot">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" class="mobile-height-auto" height="23" >
+                                                                                    <div style="font-size: 12px;">Compra segura</div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="20"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!--[if gte mso 9]>
+                                                                    </td>
+                                                                    </tr>
+                                                                    </table>
+                                                                    <![endif]-->
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--[if gte mso 9]>
+                                                        </td>
+                                                        </tr>
+                                                        </table>
+                                                        <![endif]-->
+                                                    </td>
+                                                    <td style="width: 50px;" class="mobile-margen"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="40"></td>
+                                    </tr>
+                                    <tr>
+                            <td>
+                                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                    <tr>
+                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                        <td style="border: 1px solid #5822a0;">
+                                            <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                <tr>
+                                                    <td width="3%" height="27"></td>
+                                                    <td></td>
+                                                    <td width="3%"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 15px;" class="mobile-margen"></td>
+                                                    <td>
+                                                        <table width="50%" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-full">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td valign="middle" height="116" width="50%" style="text-align: center; vertical-align: middle;" class="mobile-textcenter">
+                                                                    <div style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: #5822a0;text-align: left;line-height: 24px;font-weight: bold;" class="mobile-textcenter">
+                                                                        Si tienes una consulta <br> adicional, no dudes en <br> contactarnos
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table width="49%" border="0" cellpadding="0" cellspacing="0" align="right" class="mobile-full mobile-textcenter">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="50" valign="middle" align="left" class="mobile-vmiddle mobile-textcenter">
+                                                                        <img alt="música" border="0" hspace="0" vspace="0" width="22" height="22" align="center" style="border: 0px; display: block; color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 24px; height: auto; max-width: 100%;" src="http://mercury.vteximg.com.br/arquivos/icon_audifono.png">
+                                                                    </td>
+                                                                    <td valign="middle" align="left">
+                                                                        <div style="font-size: 14px;line-height: 24px;font-family: Arial;color: #8c8b8b;">
+                                                                            <font style="font-weight: bold;color: #5822a0;">Ll&#225;manos:</font><br>
+                                                                            (01) 289-1616
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" height="20"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td width="50" valign="middle" align="left" class="mobile-vmiddle">
+                                                                        <img alt="música" border="0" hspace="0" vspace="0" width="22" height="22" align="center" style="border: 0px; display: block; color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 24px; height: auto; max-width: 100%;" src="http://mercury.vteximg.com.br/arquivos/icon_mail.png">
+                                                                    </td>
+                                                                    <td valign="middle" align="left">
+                                                                        <div style="font-size: 14px;line-height: 24px;font-family: Arial;color: #8c8b8b;">
+                                                                            <font style="font-weight: bold;color: #5822a0;">Escr&#237;benos:</font><br>
+                                                                            hola@shopstar.com.pe
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                    <td style="width: 15px;" class="mobile-margen"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="27"></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td style="width: 50px;" class="mobile-margen"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="40"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#5822a0;">
+                                    <tbody>
+                                        <tr>
+                                            <td height="20" colspan="3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 50px;" class="mobile-margen"></td>
+                                            <td>
+                                                <table width="50%" border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-full">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="middle" height="40" width="50%" style="text-align: left; vertical-align: middle;">
+                                                            <img alt="Shopstar" border="0" vspace="0" hspace="0" width="129" height="30" style="border: 0px; display: block; color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 209px; height: auto; max-width: 100%;" src="http://mercury.vteximg.com.br/arquivos/mercury_blanco.png">
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td style="width: 50px;" class="mobile-margen"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#5822a0;">
+                                    <tbody>
+                                    <tr>
+                                        <td align="right" style="font-family: Arial; font-size: 20px; color: #333333; line-height: 30px;text-align: -webkit-right;">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                <tr>
+                                                    <th height="50"></th>
+                                                    <th style="text-align: center;">
+                                                        <a href="https://shopstar.pe/Institucional/politica-de-privacidad" target="_blank" style="color: #ffffff; font-weight: normal; font-size: 14px;border-right: 1px solid !important;padding-right: 12px;" class="text-footer">
+                                                            Política de privacidad
+                                                        </a>
+                                                        
+                                                    </th>
+                                                    <th width="10"></th>
+                                                    <th style="text-align: center;">
+                                                        <a href="mailto:hola@shopstar.com.pe" style="color: #ffffff; font-weight: normal; font-size: 14px;border-right: 1px solid !important;padding-right: 12px;" class="text-footer">
+                                                            Cancelar suscripción
+                                                        </a>
+                                                    </th>
+                                                    <th width="10"></th>
+                                                    <th style="text-align: center;">
+                                                        <a href="https://shopstar.pe/" target="_blank" style="color: #ffffff; font-weight: normal; font-size: 14px;" class="text-footer">
+                                                        Shopstar.pe</a>
+                                                    </th>
+                                                    <th width="15"></th>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        <table>
+      <!--/script -->
+      <!--/600px container -->
+      <!--/100% wrapper-->
+      <!-- <script src="../../render/vtex/jquery-1.8.3.min.js"></script>
+      <script src="../handlebars.js" /></script>
+      <script src="../handlebars-utils.js"></script>
+      <script src="confirmacao-de-pedidos.js" /></script> -->
+   </body>
+</html>
